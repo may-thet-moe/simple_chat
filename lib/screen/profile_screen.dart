@@ -180,7 +180,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 onPressed: () async {
                   final ImagePicker picker = ImagePicker();
                   // Pick an image.
-                  final XFile? image = await picker.pickImage(source: ImageSource.gallery, imageQuality: 70);
+                  final XFile? image = await picker.pickImage(source: ImageSource.gallery, imageQuality: 30);
 
                   if(image != null){
                     log('Image path : ${image.path}');
@@ -202,7 +202,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ),
                 onPressed: () async{
                   final ImagePicker picker = ImagePicker();
-                  final XFile? image = await picker.pickImage(source: ImageSource.camera, imageQuality: 70);
+                  final XFile? image = await picker.pickImage(source: ImageSource.camera, imageQuality: 30);
 
                   if(image != null){
                     log('Image path : ${image.path}');
